@@ -3,44 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinaye Transfers</title>
+    <title>Tinaye Transfers - Airport Pickups & Drop-offs</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-image: url('airplane-bg.jpg'); background-size: cover; background-position: center; color: white; }
-        header { background: rgba(30, 58, 138, 0.8); color: white; padding: 15px; text-align: center; }
-        nav { display: flex; justify-content: center; background: rgba(59, 130, 246, 0.9); padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .section { padding: 20px; text-align: center; background: rgba(0, 0, 0, 0.7); margin: 20px; border-radius: 10px; }
-        .payment-icons { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
-        .payment-icons img { width: 50px; }
-        footer { background: rgba(30, 58, 138, 0.8); color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        /* Background Image & Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/airport-background.jpg'); /* Change this */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background-color: #ff9900;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #cc7700;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+            color: black;
+        }
+
+        .services h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 30px;
+            background: #222;
+            color: white;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Logo Overlay */
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .taxi-logo {
+            position: absolute;
+            bottom: -20px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 100px;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 16px; }
+            .cta-button { font-size: 16px; padding: 10px 20px; }
+            .services h2 { font-size: 24px; }
+            .services li { font-size: 16px; }
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tinaye Transfers</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section class="section">
-        <h2>Welcome to Tinaye Transfers</h2>
-        <p>Your trusted partner for airport transfers, tour guides, and travel assistance in China.</p>
-    </section>
-    <section class="section">
-        <h2>Accepted Payment Methods</h2>
-        <div class="payment-icons">
-            <img src="fnb-icon.png" alt="FNB">
-            <img src="nedbank-icon.png" alt="Nedbank">
-            <img src="mastercard-icon.png" alt="Mastercard">
-            <img src="visa-icon.png" alt="Visa">
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Tinaye Transfers</h1>
+        <p>Reliable Airport Pick-up & Drop-off Services Across China!</p>
+        <a href="pricing.html" class="cta-button">View Pricing</a>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h2>Our Services Include:</h2>
+        <ul>
+            <li>✔️ Airport Pickups & Drop-offs</li>
+            <li>✔️ International Students & Tourist Transfers</li>
+            <li>✔️ Transit Flights & Train Station Pickups</li>
+            <li>✔️ Hotel Check-Ins & School Drop-offs</li>
+            <li>✔️ Money Exchange Assistance</li>
+            <li>✔️ Service Available in All Cities in China</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <p><strong>📞 Call or WhatsApp:</strong> +27 60 857 6189 | +86 178 1071 5373</p>
+        <p><strong>💬 WeChat:</strong> Scan the QR Code Below</p>
+
+        <div class="image-container">
+            <img src="img/wechat-qr.png" alt="WeChat QR Code">
+            <img src="img/taxi-logo.png" alt="Taxi Logo" class="taxi-logo">
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Tinaye Transfers | All Rights Reserved</p>
-    </footer>
+    </div>
+
 </body>
 </html>
