@@ -3,117 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - Tinaye Transfers</title>
+    <title>Pricing - T&M Destinations</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header, footer { background: #1e3a8a; color: white; text-align: center; padding: 15px; }
-        nav { display: flex; justify-content: center; background: #3b82f6; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .section { padding: 20px; text-align: center; }
-        table { width: 80%; margin: 0 auto; border-collapse: collapse; background: white; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
-        th { background: #3b82f6; color: white; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e3a8a, #3b82f6, #87CEFA);
+            color: white;
+        }
+        header {
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to right, #3b82f6, #87CEFA);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            color: black;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background: #3b82f6;
+            color: white;
+            font-size: 20px;
+        }
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .payment-icons img {
+            width: 50px;
+        }
+        footer {
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Pricing</h1>
+        Pricing - T&M Destinations
     </header>
     <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="pricing.html">Pricing</a>
         <a href="booking.html">Booking</a>
         <a href="contact.html">Contact</a>
     </nav>
     <section class="section">
-        <h2>Airport Transfer Routes</h2>
+        <h2>Airport Transfer Pricing</h2>
         <table>
             <tr>
-                <th>Transfer Route</th>
-                <th>Method</th>
-                <th>Price (USD)</th>
-                <th>Price (ZAR)</th>
-                <th>Price (CNY)</th>
+                <th>Airport</th>
+                <th>City</th>
+                <th>Standard Price (USD)</th>
+                <th>Standard Price (CNY)</th>
+                <th>Student Pick Transfer or Drop-Off (USD)</th>
+                <th>Student Pick Transfer or Drop-Off (CNY)</th>
             </tr>
             <tr>
-                <td>Beijing Daxing Airport → Beijing Capital Airport (PEK)</td>
-                <td>Didi → PEK Airport</td>
-                <td>$50</td>
-                <td>R900</td>
-                <td>¥350</td>
+                <td>Beijing Capital (PEK)</td>
+                <td>Beijing</td>
+                <td>$150</td>
+                <td>¥1,060</td>
+                <td>$120</td>
+                <td>¥850</td>
             </tr>
             <tr>
-                <td>Shanghai Hongqiao Airport → Shanghai Pudong Airport (PVG)</td>
-                <td>Train → PVG Airport</td>
-                <td>$40</td>
-                <td>R720</td>
-                <td>¥280</td>
+                <td>Shanghai Pudong (PVG)</td>
+                <td>Shanghai</td>
+                <td>$150</td>
+                <td>¥1,060</td>
+                <td>$150</td>
+                <td>¥1,060</td>
             </tr>
             <tr>
-                <td>Guangzhou South Railway Station → Guangzhou Baiyun Airport (CAN)</td>
-                <td>Uber → CAN Airport</td>
-                <td>$45</td>
-                <td>R810</td>
-                <td>¥320</td>
+                <td>Guangzhou Baiyun (CAN)</td>
+                <td>Guangzhou</td>
+                <td>$150</td>
+                <td>¥1,060</td>
+                <td>$150</td>
+                <td>¥1,060</td>
+            </tr>
+                    <tr>
+                <td>Shenzhen Bao'an (SZX)</td>
+                <td>Shenzhen</td>
+                <td>$150</td>
+                <td>¥1,060</td>
+                <td>$150</td>
+                <td>¥1,060</td>
             </tr>
             <tr>
-                <td>Shenzhen North Railway Station → Shenzhen Bao'an Airport (SZX)</td>
-                <td>Didi → SZX Airport</td>
-                <td>$40</td>
-                <td>R720</td>
-                <td>¥280</td>
+                <td>Chengdu Shuangliu (CTU)</td>
+                <td>Chengdu</td>
+                <td>$140</td>
+                <td>¥990</td>
+                <td>$140</td>
+                <td>¥990</td>
             </tr>
             <tr>
-                <td>Chengdu East Railway Station → Chengdu Shuangliu Airport (CTU)</td>
-                <td>Train → CTU Airport</td>
-                <td>$35</td>
-                <td>R630</td>
-                <td>¥245</td>
+                <td>Xi'an Xianyang (XIY)</td>
+                <td>Xi'an</td>
+                <td>$140</td>
+                <td>¥990</td>
+                <td>$140</td>
+                <td>¥990</td>
+            </tr>
+            <tr>
+                <td>Hangzhou Xiaoshan (HGH)</td>
+                <td>Hangzhou</td>
+                <td>$140</td>
+                <td>¥990</td>
+                <td>$140</td>
+                <td>¥990</td>
             </tr>
         </table>
     </section>
     <section class="section">
-        <h2>Additional Booking Services</h2>
+        <h2>Tour Guide Experience</h2>
+        <p>Tour guide services start when the client reaches the first sightseeing location and end when returning to the starting point. Clients cover their own accommodation and that of the tour guide.</p>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Business Travelers</th>
+                <th>Tourists</th>
+            </tr>
+            <tr>
+                <td>Hourly Tour Guide</td>
+                <td>$25 per hour</td>
+                <td>$25 per hour</td>
+            </tr>
+            <tr>
+                <td>Full-Day Tour Guide</td>
+                <td>$150 + Accommodation</td>
+                <td>$150 + Accommodation</td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <h2>Booking Services</h2>
         <table>
             <tr>
                 <th>Service</th>
                 <th>Price (USD)</th>
-                <th>Price (ZAR)</th>
                 <th>Price (CNY)</th>
             </tr>
             <tr>
                 <td>Flight Booking Assistance</td>
                 <td>$30</td>
-                <td>R540</td>
                 <td>¥210</td>
             </tr>
             <tr>
                 <td>Train Ticket Booking</td>
                 <td>$20</td>
-                <td>R360</td>
                 <td>¥140</td>
             </tr>
             <tr>
                 <td>Hotel Booking Assistance</td>
                 <td>$25</td>
-                <td>R450</td>
                 <td>¥175</td>
             </tr>
         </table>
     </section>
     <section class="section">
-        <h2>Our Services</h2>
-        <ul>
-            <li><strong>Airport Transfers</strong> - Safe and reliable Uber & Didi rides from major Chinese airports.</li>
-            <li><strong>Tour Guide Services</strong> - Professional guided city and cultural tours.</li>
-            <li><strong>Flight & Hotel Booking</strong> - Assistance with flight reservations and hotel accommodations.</li>
-            <li><strong>Student Assistance</strong> - Help with police registration, SIM card setup, and bank account creation.</li>
-            <li><strong>Currency Exchange Assistance</strong> - Support with exchanging USD to CNY.</li>
-        </ul>
+        <h2>Accepted Payment Methods</h2>
+        <div class="payment-icons">
+            <img src="fnb-logo.png" alt="FNB">
+            <img src="nedbank-logo.png" alt="Nedbank">
+            <img src="mastercard-logo.png" alt="Mastercard">
+            <img src="visa-logo.png" alt="Visa">
+            <img src="wechat-pay-logo.png" alt="WeChat Pay">
+            <img src="alipay-logo.png" alt="Alipay">
+        </div>
     </section>
     <footer>
-        <p>&copy; 2025 Tinaye Transfers | All Rights Reserved</p>
+        <p>&copy; 2025 T&M Destinations | All Rights Reserved</p>
     </footer>
 </body>
 </html>
