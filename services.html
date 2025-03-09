@@ -1,125 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - T&M Destinations</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #1e3a8a, #3b82f6, #87CEFA);
-            color: white;
-        }
-        header {
-            background: linear-gradient(to right, #1e3a8a, #3b82f6);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: linear-gradient(to right, #3b82f6, #87CEFA);
-            padding: 15px;
-            position: sticky;
-            top: 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .section {
-            padding: 40px;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            margin: 20px;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background: white;
-            color: black;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-        }
-        th {
-            background: #3b82f6;
-            color: white;
-            font-size: 20px;
-        }
-        footer {
-            background: linear-gradient(to right, #1e3a8a, #3b82f6);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - T&M Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #013220, #2E8B57, #66CDAA);
+      color: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(to right, #013220, #2E8B57);
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffcc00; /* Gold accent */
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #2E8B57, #66CDAA);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .section {
+      padding: 40px;
+      margin: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    .service-list {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .service-list li {
+      margin: 15px 0;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .service-list li:last-child {
+      border-bottom: none;
+    }
+    footer {
+      background: linear-gradient(to right, #013220, #2E8B57);
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #f0f0f0;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Our Services - T&M Destinations
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section class="section">
-        <h2>Premium Travel & Transfer Services</h2>
-        <p>T&M Destinations provides world-class airport transfers, flight booking assistance, and student support services across China. We ensure a smooth and stress-free arrival for international students, travelers, and professionals.</p>
-        <p>Our premium services include free rebooking for canceled flights, flexible transport options, and dedicated assistance upon arrival.</p>
-    </section>
-    <section class="section">
-        <h2>Our Services</h2>
-        <table>
-            <tr>
-                <th>Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Airport Transfers</td>
-                <td>Safe & reliable transportation from major Chinese airports</td>
-            </tr>
-            <tr>
-                <td>Direct Flights Assistance</td>
-                <td>Helping clients book flights from their home country to China</td>
-            </tr>
-            <tr>
-                <td>Train Booking</td>
-                <td>Booking train tickets for a seamless journey to final destinations</td>
-            </tr>
-            <tr>
-                <td>Hotel Booking & Check-in</td>
-                <td>Assistance with finding and checking into accommodations</td>
-            </tr>
-            <tr>
-                <td>Student Assistance</td>
-                <td>Help with police registration, SIM card setup, and university check-in</td>
-            </tr>
-            <tr>
-                <td>Tour Guide Services</td>
-                <td>Personalized guided cultural and city tours</td>
-            </tr>
-        </table>
-    </section>
-    <footer>
-        <p>&copy; 2025 T&M Destinations | All Rights Reserved</p>
-    </footer>
+  <header>
+    Services - T&M Destinations
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section class="section">
+    <h2>Our Premium Services</h2>
+    <ul class="service-list">
+      <li><strong>Airport Transfers:</strong> Reliable and safe transportation from all major international airports in China.</li>
+      <li><strong>Airport Pick-Up (Same City):</strong> Efficient local transfers for within-city travel.</li>
+      <li><strong>Flight & Train Booking Assistance:</strong> Expert help booking flights from your home country to China and arranging train tickets to your final destination.</li>
+      <li><strong>Hotel Booking & Check-In Assistance:</strong> Hassle-free support to secure and check into your accommodation.</li>
+      <li><strong>Student Assistance:</strong> Comprehensive support for international students, including police registration, SIM card setup, and university check-in.</li>
+      <li><strong>Currency Exchange Assistance:</strong> Guidance for smoothly exchanging USD to CNY upon arrival.</li>
+      <li><strong>Tour Guide Services:</strong> Premium guided tours for business travelers and tourists. Services begin when you reach the first sightseeing location and end upon return. For full-day tours, clients cover accommodation for both themselves and the guide.</li>
+      <li><strong>Embassy Assistance:</strong> Professional support for preparing, certifying, and submitting documents to embassies in Beijing. This service is available for clients from:
+        <ul>
+          <li>Zimbabwe</li>
+          <li>South Africa</li>
+          <li>Botswana</li>
+          <li>Tanzania</li>
+          <li>Congo</li>
+          <li>Gabon</li>
+          <li>Kenya</li>
+          <li>Swaziland</li>
+          <li>Mozambique</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2025 T&M Destinations | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
